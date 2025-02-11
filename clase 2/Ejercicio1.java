@@ -1,12 +1,26 @@
 public class Ejercicio1 {
+        public static void main(String[] args) {
+                // Creación del objeto op de la clase OperacionesConArreglos
 
-    public static void main(String[] args) {
-        // Crear un arreglo de enteros
-        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+                OperacionesConArreglos op = new OperacionesConArreglos();
+                 /* // Crear un arreglo de enteros
 
-        // Recorrer el arreglo e imprimir cada elemento
-        for (int i = 0; i < a.length; i++) {
-            System.out.println("a[ " + i + " ] = " + a[i]);
+                int[] a = { 10, 20, 33, 24, 15, 26, 67, 28, 9, 10 };
+
+                // Mostrar los elementos del arreglo
+
+                System.out.println(op.mostrarElementos(a));
+
+                System.out.println("La suma de los elementos del arreglo es: " + op.sumarElementos(a));
+
+                System.out.println("El promedio de los elementos del arreglo es: " + op.promedioElementos(a));
+                */
+                
+                int n = 5;
+                int a = op.llenarArregloAleatorios(n);
+                System.out.println(op.mostrarElementos(a));
+
+                     
         }
-    }
+
 }
