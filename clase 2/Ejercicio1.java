@@ -17,7 +17,7 @@ public class Ejercicio1 {
                 */
                 
                 int n = 5;
-                int a = op.llenarArregloAleatorios(n);
+                int[] a = op.llenarArregloAleatorios(n);
                 System.out.println(op.mostrarElementos(a));
 
                      
