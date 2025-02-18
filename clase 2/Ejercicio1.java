@@ -1,5 +1,11 @@
+import java.util.Scanner;
+
 public class Ejercicio1 {
+       
         public static void main(String[] args) {
+
+                Scanner scanner = new Scanner(System.in);
+                
                 // Creación del objeto op de la clase OperacionesConArreglos
 
                 OperacionesConArreglos op = new OperacionesConArreglos();
@@ -20,7 +26,11 @@ public class Ejercicio1 {
                 int[] a = op.llenarArregloAleatorios(n);
                 System.out.println(op.mostrarElementos(a));
 
-                     
+        
+        System.out.println("Ingresar el numero de empleados: ");
+        int e = scanner.nextInt();
+        op.Ejercicio2(e);
+        
         }
 
 }

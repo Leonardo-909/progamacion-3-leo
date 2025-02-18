@@ -1,4 +1,8 @@
+
+import java.util.Scanner;
+
 public class OperacionesConArreglos {
+    private Scanner scanner = new Scanner(System.in);
 
     public String mostrarElementos(int[] a) {
         String cad = "";
@@ -32,5 +36,28 @@ public class OperacionesConArreglos {
             a[i] = (int) (Math.random() * 100);
         }
         return a;
-    }     
+    }  
+    
+    public void Ejercicio2(int e){
+        double[] sueldos = new double[e];
+        double[] asignaciones = new double[e];
+        double[] deducciones = new double[e];
+        double[] pagoNeto = new double[e];
+    
+        for (int i = 0; i < e; i++) {
+            System.out.println("\n Empleado "+ (i+1));
+            System.out.println("Sueldo: ");
+            sueldos[i] = scanner.nextDouble();
+            System.out.println("Asignaciones: ");
+            asignaciones[i] = scanner.nextDouble();
+            System.out.println("Deducciones: ");
+            deducciones[i] = scanner.nextDouble();
+    
+            pagoNeto[i] = sueldos[i] + asignaciones[i] - deducciones[i];
+            }
+            System.out.println("\nPago neto por empleado: ");
+            for(int i = 0; i < e; i++) {
+                System.out.println("Empleado " +(i + 1)+": " + String.format("%.2f", pagoNeto[i]));
+            }   
+    }
 }
