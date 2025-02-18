@@ -60,4 +60,20 @@ public class OperacionesConArreglos {
                 System.out.println("Empleado " +(i + 1)+": " + String.format("%.2f", pagoNeto[i]));
             }   
     }
+
+        public void Ejercicio3(int s){
+            int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            int sumaPares = 0, sumaImpares = 0;
+    
+            for (int numero : numeros) {
+                if (numero % 2 == 0) {
+                    sumaPares += numero;
+                } else {
+                    sumaImpares += numero;
+                }
+        }
+        System.out.println("Suma de pares: " + sumaPares);
+        System.out.println("Suma de impares: " + sumaImpares);
+    }
+
 }

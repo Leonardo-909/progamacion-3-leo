@@ -30,6 +30,11 @@ public class Ejercicio1 {
         System.out.println("Ingresar el numero de empleados: ");
         int e = scanner.nextInt();
         op.Ejercicio2(e);
+
+         System.out.println("\n Suma de pares e impares");
+        int s = scanner.nextInt();
+        op.Ejercicio3(s);       
+        
         
         }
 
