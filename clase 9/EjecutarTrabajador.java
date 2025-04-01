@@ -18,9 +18,13 @@ public class EjecutarTrabajador {
 
         System.out.println(trabajadores.size());
 
+        double inc = 0.20; //incremento del 20%
+
         for (int i = 0; i < trabajadores.size(); i++) {
-            System.out.println(trabajadores.elementAt(i).getNombre());
+            System.out.println("Nombre:" + trabajadores.elementAt(i).getNombre()+ 
+            "Salario inicial:" + trabajadores.elementAt(i).getSalario() +
+            " Salario final después del incremento: " + trabajadores.elementAt(i).pagar(inc) + "\n");
         }
-        
+
     }
 }
